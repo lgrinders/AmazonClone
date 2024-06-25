@@ -7,6 +7,7 @@ export default {
         NavBarBlue: "#131921",
         SearchYellow: "#f3a847",
         AmazonOrange: "#f08804",
+        lightCyan: "#e7f4f5",
       },
     },
   },

@@ -1,63 +1,51 @@
 import { HiOutlineLocationMarker } from "react-icons/hi";
-import { IoCaretDownSharp } from "react-icons/io5";
-import SearchBar from "../SearchBar/SearchBar";
 import { FiShoppingCart } from "react-icons/fi";
+import SearchBar from "../SearchBar/SearchBar";
+import AccountsLists from "../AccountsLists/AccountsList";
+import Languag from "../Languag/Languag";
 
 export default function NavBar() {
+
   return (
     <>
-      <div className="bg-NavBarBlue flex h-16 w-screen items-center gap-10 px-5">
-        <div className="w-[150px]">
-          <img src="/public/Amazon-logo-white.png" />
+      <div className="flex h-16 w-screen items-center gap-1 bg-NavBarBlue p-1 px-3">
+        <div className="h-full w-[160px] min-w-[130px] rounded-sm border-2 border-transparent p-1 duration-200 hover:border-white">
+          <img src="/public/Amazon-logo-white.png" className="p-2" />
         </div>
-        <div className="w-[300px]">
-          <p className="relative left-6 top-0.5 text-sm text-neutral-400">
-            Delivering to your location
-          </p>
-          <p className="relative bottom-0.5 flex items-center gap-1 font-bold text-white">
-            <HiOutlineLocationMarker size={20} />
-            Update location
-          </p>
+
+        <div className="flex h-full min-w-[185px] flex-row-reverse items-center justify-center gap-1 rounded-sm border-2 border-transparent p-2 duration-200 hover:border-white">
+          <div className="flex flex-col">
+            <p className="text-xs leading-4 text-neutral-300">
+              Delivering to your location
+            </p>
+            <p className="items-center text-sm font-bold leading-3 text-white">
+              Update location
+            </p>
+          </div>
+          <HiOutlineLocationMarker size={20} className="text-white" />
         </div>
+
         <SearchBar />
-        <div className="flex w-[90px] items-center gap-1">
-          <img
-            src="/public/AmericanFlag.png"
-            alt="American Flag"
-            className="h-3 w-5"
-          />
-          <p className="text-md font-black text-white">EN</p>
 
-          <div className="flex h-4 items-end justify-center">
-            <IoCaretDownSharp size={11} className="text-neutral-300" />
-          </div>
-        </div>
+        <Languag />
 
-        <div className="flex w-[250px] gap-1">
+        <AccountsLists />
+
+        <div className="flex h-full min-w-[83px] items-center justify-center gap-1 rounded-sm border-2 border-transparent p-2 duration-200 hover:border-white">
           <div>
-            <p className="relative top-0.5 text-sm text-white">
-              Hello, sign in
-            </p>
-            <div className="flex items-center">
-              <p className="text-md relative bottom-0.5 font-black text-white">
-                Accounts & Lists
-              </p>
-              <IoCaretDownSharp size={11} className="text-neutral-300" />
-            </div>
+            <p className="text-sm leading-3 text-white">Returns</p>
+            <p className="text-md font-black leading-4 text-white">& Orders</p>
           </div>
         </div>
-        <div className="flex w-[140px] gap-1">
-          <div>
-            <p className="relative top-0.5 text-sm text-white">Returns</p>
-            <p className="text-md relative bottom-0.5 font-black text-white">
-              & Orders
-            </p>
-          </div>
-        </div>
-        <div className="relative">
-          <FiShoppingCart className="text-white" size={40} />
-          <div className="text-AmazonOrange absolute left-5 top-1.5 text-md font-black">
+        <div className="relative flex h-full justify-center gap-1 rounded-sm border-2 border-transparent p-2 duration-200 hover:border-white">
+          <FiShoppingCart className="text-white" size={35} />
+          <div className="absolute left-6 top-3.5 text-sm font-black text-AmazonOrange">
             0
+          </div>
+          <div className="flex items-end">
+            <p className="-leading-3 hidden text-sm font-black text-white xl:block">
+              Cart
+            </p>
           </div>
         </div>
       </div>
