@@ -5,7 +5,6 @@ import AccountsLists from "../AccountsLists/AccountsList";
 import Languag from "../Languag/Languag";
 
 export default function NavBar() {
-
   return (
     <>
       <div className="flex h-16 w-screen items-center gap-1 bg-NavBarBlue p-1 px-3">
