@@ -75,3 +75,37 @@ export const lists = [
   "Your Saved Books",
 ];
 
+export const Trending = ["Best Sellers", "New Releases", "Moves and Shakers"];
+
+export const DigitalContent = [
+  "Amazon Luna - Cloud Gaming",
+  "Prime Video",
+  "Amazon Music",
+  "Echo & Alexa",
+  "Fire Tablets",
+  "Fire TV",
+  "Kindle E-readers & Originals",
+  "Amazon Photos",
+  "Amazon Appstore",
+];
+
+export const ShopByDepartment = [
+  "Clothing, Shoes, Jewelry & Watches",
+  "Amazon Fresh",
+  "Whole Foods Market",
+  "Books",
+];
+
+export const ProgramsFeatures = [
+  "Same-Day Delivery",
+  "Medical Care & Pharmacy",
+  "Amazon Physical Stores",
+  "Amazon Business",
+];
+
+export const HelpSettings = [
+  "Your Account",
+  "English",
+  "United States",
+  "Sign in",
+];
