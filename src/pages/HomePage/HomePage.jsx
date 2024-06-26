@@ -8,11 +8,17 @@ export default function HomePage() {
 
   return (
     <>
+      <div
+        className={
+          sideNavOpen ? "absolute z-40 h-screen w-screen bg-black/70" : null
+        }
+      ></div>
       <NavBar />
       <SecondaryNavBar
         sideNavOpen={sideNavOpen}
         setSideNavOpen={setSideNavOpen}
       />
+
       <SideNav sideNavOpen={sideNavOpen} setSideNavOpen={setSideNavOpen} />
     </>
   );
