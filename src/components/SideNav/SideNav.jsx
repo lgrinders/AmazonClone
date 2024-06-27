@@ -7,7 +7,6 @@ import {
   ProgramsFeatures,
   HelpSettings,
 } from "../../assets/category";
-import { useEffect } from "react";
 
 const SectionHeader = ({ title }) => (
   <div className="flex h-12 w-full items-center gap-2 bg-white px-10">

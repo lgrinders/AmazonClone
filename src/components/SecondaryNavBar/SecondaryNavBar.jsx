@@ -5,7 +5,7 @@ import Groceries from "../Groceries/Groceries";
 export default function SecondaryNavBar({ sideNavOpen, setSideNavOpen }) {
   return (
     <>
-      <div className="flex h-10 w-screen items-center gap-1 bg-SecondaryNavBarBlue px-5 text-sm text-white">
+      <div className="flex h-10 items-center bg-SecondaryNavBarBlue px-5 text-sm text-white">
         <div
           className="flex h-full w-[70px] min-w-[70px] items-center gap-1 rounded-sm border border-transparent p-2 hover:border-white"
           onClick={(e) => setSideNavOpen(!sideNavOpen)}
