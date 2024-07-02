@@ -7,7 +7,7 @@ import Languag from "../Languag/Languag";
 export default function NavBar() {
   return (
     <>
-      <div className="flex h-16 items-center gap-1 bg-NavBarBlue p-1 px-3">
+      <div className="flex h-16 items-center gap-1 bg-NavBarBlue p-1 px-3 relative z-50">
         <div className="h-full w-[160px] min-w-[130px] rounded-sm border-2 border-transparent p-1 duration-200 hover:border-white">
           <img src="/public/Amazon-logo-white.png" className="p-2" />
         </div>

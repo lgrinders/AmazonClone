@@ -38,16 +38,15 @@ export default function BackgroundSlider() {
   useEffect(() => {
     const newIntervalId = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 6000); // 6000ms = 6 seconds
+    }, 6000);
 
     setIntervalId(newIntervalId);
 
-    // Clear interval on component unmount
     return () => clearInterval(newIntervalId);
   }, [currentIndex]);
 
   return (
-    <div className="relative m-auto  max-w-[1500px] overflow-hidden bg-blue-500">
+    <div className="relative m-auto max-w-[1500px] overflow-hidden overflow-x-hidden z-10">
       <div
         className="absolute inset-0 flex transition-transform duration-500"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -55,7 +54,7 @@ export default function BackgroundSlider() {
         {images.map((image, index) => (
           <div key={index} className="relative h-full w-full flex-shrink-0">
             <div
-              className="fade-bottom h-full w-full flex-shrink-0"
+              className="fade-bottom h-[600px] w-full flex-shrink-0"
               style={{
                 backgroundImage: `url(${image})`,
                 backgroundSize: "cover",
@@ -65,13 +64,13 @@ export default function BackgroundSlider() {
           </div>
         ))}
       </div>
-      <div className="relative z-10 flex h-64 w-full justify-between text-white">
+      <div className="relative z-10 flex h-60 w-full justify-between text-white">
         <div
           className="flex w-20 items-center justify-center rounded-md border-white focus:border-2"
           tabIndex={0}
           onClick={handlePrevClick}
         >
-          <IoChevronBack size={50} />
+          <IoChevronBack size={50}/>
         </div>
         <div
           className="flex w-20 items-center justify-center rounded-md border-white focus:border-2"
