@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { IoChevronBack, IoChevronForward } from "react-icons/io5";
+import ProductSquare from "../ProductSquare/ProductSquare";
 
 const images = [
   "/public/sliderImg1.jpg",
@@ -46,7 +47,7 @@ export default function BackgroundSlider() {
   }, [currentIndex]);
 
   return (
-    <div className="relative m-auto h-[600px] max-w-[1500px] overflow-hidden">
+    <div className="relative m-auto  max-w-[1500px] overflow-hidden bg-blue-500">
       <div
         className="absolute inset-0 flex transition-transform duration-500"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -80,6 +81,7 @@ export default function BackgroundSlider() {
           <IoChevronForward size={50} />
         </div>
       </div>
+      <ProductSquare />
     </div>
   );
 }
