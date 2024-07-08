@@ -12,6 +12,7 @@ import RowContainer2 from "../../components/RowContainer2/RowContainer2";
 import RowContainer3 from "../../components/RowContainer3/RowContainer3";
 import BottomPageAdd from "../../components/BottomPageAdd/BottomPageAdd";
 import SignInFooter from "../../components/SignInFooter/SignInFooter";
+import BackToTopFooter from "../../components/BackToTopFooter/BackToTopFooter";
 
 export default function HomePage() {
   const [sideNavOpen, setSideNavOpen] = useState(false);
@@ -52,7 +53,8 @@ export default function HomePage() {
           <RowContainer3 />
           <BottomPageAdd />
         </div>
-          <SignInFooter />
+        <SignInFooter />
+        <BackToTopFooter />
       </div>
     </>
   );

@@ -11,6 +11,7 @@ export default {
         SecondaryNavBarBlue: "#232f3e",
         cartYellow: "#f8d432",
         cartYellowHover: "#f7ca00",
+        SecondaryNavBarBlueHover: "#485769",
       },
     },
   },
