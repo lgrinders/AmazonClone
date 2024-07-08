@@ -1,3 +1,5 @@
+import BackToTopFooter from "./src/components/BackToTopFooter/BackToTopFooter";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -12,6 +14,7 @@ export default {
         cartYellow: "#f8d432",
         cartYellowHover: "#f7ca00",
         SecondaryNavBarBlueHover: "#485769",
+        BackToTopFooterBlue: "#2f3c4d",
       },
     },
   },
