@@ -1,8 +1,11 @@
-import MainFooter from "../MainFooter/MainFooter"
-
+import MainFooter from "../MainFooter/MainFooter";
+import SecondaryMainFooter from "../SeconaryMainFooter/SecondaryMainFooter";
 
 export default function Footer() {
-    return <>
-        <MainFooter />
+  return (
+    <>
+      <MainFooter />
+      <SecondaryMainFooter />
     </>
+  );
 }
