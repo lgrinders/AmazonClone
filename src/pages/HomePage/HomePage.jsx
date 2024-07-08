@@ -11,6 +11,7 @@ import RowContainer1 from "../../components/RowContainer1/RowContainer1";
 import RowContainer2 from "../../components/RowContainer2/RowContainer2";
 import RowContainer3 from "../../components/RowContainer3/RowContainer3";
 import BottomPageAdd from "../../components/BottomPageAdd/BottomPageAdd";
+import SignInFooter from "../../components/SignInFooter/SignInFooter";
 
 export default function HomePage() {
   const [sideNavOpen, setSideNavOpen] = useState(false);
@@ -31,7 +32,7 @@ export default function HomePage() {
 
       <SideNav sideNavOpen={sideNavOpen} setSideNavOpen={setSideNavOpen} />
       <div className="bg-neutral-200 pb-52">
-        <div className="m-auto flex max-w-[1500px] flex-col gap-5">
+        <div className="m-auto flex max-w-[1500px] flex-col gap-5 pb-5">
           <BackgroundSlider />
           <ProductSlider1
             title={"Best Sellers in Grocery & Gourmet Food"}
@@ -51,6 +52,7 @@ export default function HomePage() {
           <RowContainer3 />
           <BottomPageAdd />
         </div>
+          <SignInFooter />
       </div>
     </>
   );
