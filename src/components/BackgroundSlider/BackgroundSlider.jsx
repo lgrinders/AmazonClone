@@ -3,13 +3,13 @@ import { IoChevronBack, IoChevronForward } from "react-icons/io5";
 import ProductSquare from "../ProductSquare/ProductSquare";
 
 const images = [
-  "/public/sliderImg1.jpg",
-  "/public/sliderImg2.jpg",
-  "/public/sliderImg3.jpg",
-  "/public/sliderImg4.jpg",
-  "/public/sliderImg5.jpg",
-  "/public/sliderImg6.jpg",
-  "/public/sliderImg7.jpg",
+  "/public/backgroundSliderImgs/sliderImg1.jpg",
+  "/public/backgroundSliderImgs/sliderImg2.jpg",
+  "/public/backgroundSliderImgs/sliderImg3.jpg",
+  "/public/backgroundSliderImgs/sliderImg4.jpg",
+  "/public/backgroundSliderImgs/sliderImg5.jpg",
+  "/public/backgroundSliderImgs/sliderImg6.jpg",
+  "/public/backgroundSliderImgs/sliderImg7.jpg",
 ];
 
 export default function BackgroundSlider() {
@@ -46,7 +46,7 @@ export default function BackgroundSlider() {
   }, [currentIndex]);
 
   return (
-    <div className="relative m-auto max-w-[1500px] overflow-hidden overflow-x-hidden z-10">
+    <div className="relative z-10 m-auto w-full overflow-hidden overflow-x-hidden">
       <div
         className="absolute inset-0 flex transition-transform duration-500"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -70,7 +70,7 @@ export default function BackgroundSlider() {
           tabIndex={0}
           onClick={handlePrevClick}
         >
-          <IoChevronBack size={50}/>
+          <IoChevronBack size={50} />
         </div>
         <div
           className="flex w-20 items-center justify-center rounded-md border-white focus:border-2"
