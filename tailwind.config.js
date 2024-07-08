@@ -9,6 +9,8 @@ export default {
         AmazonOrange: "#f08804",
         LightCyan: "#e7f4f5",
         SecondaryNavBarBlue: "#232f3e",
+        cartYellow: "#f8d432",
+        cartYellowHover: "#f7ca00",
       },
     },
   },

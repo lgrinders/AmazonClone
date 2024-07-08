@@ -5,9 +5,12 @@ import SideNav from "../../components/NavigationFolder/SideNav/SideNav";
 import BackgroundSlider from "../../components/BackgroundSlider/BackgroundSlider";
 import ProductSlider1 from "../../components/ProductSlider1/ProductSlider1";
 import ProductSlider2 from "../../components/ProductSlider2/ProductSlider2";
+import ProductSlider3 from "../../components/ProductSlider3/ProductSlider3";
 import { Slider1Imgs } from "../../assets/ImgArrays";
 import RowContainer1 from "../../components/RowContainer1/RowContainer1";
 import RowContainer2 from "../../components/RowContainer2/RowContainer2";
+import RowContainer3 from "../../components/RowContainer3/RowContainer3";
+import BottomPageAdd from "../../components/BottomPageAdd/BottomPageAdd";
 
 export default function HomePage() {
   const [sideNavOpen, setSideNavOpen] = useState(false);
@@ -41,6 +44,12 @@ export default function HomePage() {
             title={"Best Sellers in Home & Kitchen"}
             images={Slider1Imgs}
           />
+          <ProductSlider3
+            title={"Best Sellers in Home & Kitchen"}
+            images={Slider1Imgs}
+          />
+          <RowContainer3 />
+          <BottomPageAdd />
         </div>
       </div>
     </>
