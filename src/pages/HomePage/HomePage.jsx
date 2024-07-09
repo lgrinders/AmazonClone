@@ -14,6 +14,7 @@ import BottomPageAdd from "../../components/BottomPageAdd/BottomPageAdd";
 import SignInFooter from "../../components/SignInFooter/SignInFooter";
 import BackToTopFooter from "../../components/BackToTopFooter/BackToTopFooter";
 import Footer from "../../components/Footer/Footer";
+import SecondaryFooter from "../../components/SecondaryFooter/SecondaryFooter";
 
 export default function HomePage() {
   const [sideNavOpen, setSideNavOpen] = useState(false);
@@ -33,7 +34,7 @@ export default function HomePage() {
       />
 
       <SideNav sideNavOpen={sideNavOpen} setSideNavOpen={setSideNavOpen} />
-      <div className="bg-neutral-200 pb-52">
+      <div className="bg-neutral-200">
         <div className="m-auto flex max-w-[1500px] flex-col gap-5 pb-5">
           <BackgroundSlider />
           <ProductSlider1
@@ -57,6 +58,7 @@ export default function HomePage() {
         <SignInFooter />
         <BackToTopFooter />
         <Footer />
+        <SecondaryFooter />
       </div>
     </>
   );
