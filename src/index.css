@@ -11,15 +11,19 @@
 }
 
 .scrollbar::-webkit-scrollbar-thumb {
-  background-color: transparent;
+  background-color: gray;
   border-radius: 10px;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
 }
 
-.scrollbar::-webkit-scrollbar-track {
+.hiddenScrollbar::-webkit-scrollbar {
+  height: 6px;
+}
+
+.hiddenScrollbar::-webkit-scrollbar-thumb {
   background-color: white;
   border-radius: 10px;
-}
-
-.scrollbar.hovered::-webkit-scrollbar-thumb {
-  background-color: gray;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
 }

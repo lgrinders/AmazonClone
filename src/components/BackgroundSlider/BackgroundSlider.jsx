@@ -25,8 +25,7 @@ export default function BackgroundSlider() {
 
   const handlePrevClick = () => {
     clearExistingInterval();
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length,
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length,
     );
   };
 
