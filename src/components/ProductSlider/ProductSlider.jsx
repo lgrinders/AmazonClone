@@ -41,7 +41,7 @@ export default function ProductSlider({ title, images }) {
 
   return (
     <section
-      className="w-full min-w-full p-5"
+      className="w-full min-w-full px-5"
       onMouseEnter={(e) => setIsHovering(true)}
       onMouseLeave={(e) => setIsHovering(false)}
     >
@@ -50,24 +50,28 @@ export default function ProductSlider({ title, images }) {
           onClick={() =>
             scrollContainerBy(-containerRef.current.clientWidth / 2)
           }
-          className={`${isHovering === true && whereIsScroll === "left" && "opacity-50 duration-700"} ${isHovering === true && whereIsScroll !== "left" && "opacity-100 duration-700"} duration-700 absolute left-5 top-24 flex h-28 w-14 items-center justify-center rounded-sm rounded-l-none bg-white opacity-0 shadow-[rgba(0,0,15,0.5)_4px_2px_4px_0px]`}
+          className={`${isHovering === true && whereIsScroll === "left" && "opacity-50 duration-300"} ${isHovering === true && whereIsScroll !== "left" && "opacity-100 duration-700"} absolute left-5 top-24 flex h-28 w-14 items-center justify-center rounded-sm rounded-l-none bg-white opacity-0 shadow-[rgba(0,0,15,0.5)_4px_2px_4px_0px] duration-700`}
         >
           <IoChevronBack size={40} />
         </button>
         <h2 className="pb-2.5 text-xl font-bold">{title}</h2>
         <div
-          className={`${isHovering ? "scrollbar" : "hiddenScrollbar"} duration-700 flex gap-5 overflow-x-scroll`}
+          className={`${isHovering ? "scrollbar" : "hiddenScrollbar"} flex gap-6 overflow-x-scroll duration-300`}
           ref={containerRef}
         >
           {images.map((item, idx) => {
-            return <img src={item} alt="" key={idx} className="pb-2.5" />;
+            return (
+              <a className="flex-none" href="#">
+                <img src={item} className="pb-2.5" key={idx} />
+              </a>
+            );
           })}
         </div>
         <button
           onClick={() =>
             scrollContainerBy(containerRef.current.clientWidth / 2)
           }
-          className={`${isHovering === true && whereIsScroll === "right" && "opacity-50 duration-700"} ${isHovering === true && whereIsScroll !== "right" && "opacity-100 duration-700"} duration-700 opacity-0 absolute right-5 top-24 flex h-28 w-14 items-center justify-center rounded-sm rounded-l-none bg-white shadow-[rgba(0,0,15,0.5)_-4px_2px_4px_0px]`}
+          className={`${isHovering === true && whereIsScroll === "right" && "opacity-50 duration-300"} ${isHovering === true && whereIsScroll !== "right" && "opacity-100 duration-700"} absolute right-5 top-24 flex h-28 w-14 items-center justify-center rounded-sm rounded-l-none bg-white opacity-0 shadow-[rgba(0,0,15,0.5)_-4px_2px_4px_0px] duration-700`}
         >
           <IoChevronForward size={40} />
         </button>

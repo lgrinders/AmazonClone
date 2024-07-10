@@ -4,7 +4,7 @@ import SecondaryNavBar from "../../components/NavigationFolder/SecondaryNavBar/S
 import SideNav from "../../components/NavigationFolder/SideNav/SideNav";
 import BackgroundSlider from "../../components/BackgroundSlider/BackgroundSlider";
 import ProductSlider from "../../components/ProductSlider/ProductSlider";
-import { Slider1Imgs } from "../../assets/ImgArrays";
+import { ProductSliderAssets } from "../../assets/ImgArrays";
 import RowContainer1 from "../../components/RowContainer1/RowContainer1";
 import RowContainer2 from "../../components/RowContainer2/RowContainer2";
 import RowContainer3 from "../../components/RowContainer3/RowContainer3";
@@ -33,17 +33,29 @@ export default function HomePage() {
 
       <SideNav sideNavOpen={sideNavOpen} setSideNavOpen={setSideNavOpen} />
       <div className="bg-neutral-200">
-        <div className="m-auto flex min-w-[1500px] w-[1500px] flex-col gap-5 pb-5">
+        <div className="m-auto flex w-[1500px] min-w-[1500px] flex-col gap-5 pb-5">
           <BackgroundSlider />
-          <ProductSlider
-            title={"Best Sellers in Grocery & Gourmet Food"}
-            images={Slider1Imgs}
-          />
 
           <RowContainer1 />
+          <ProductSlider
+            title={ProductSliderAssets[0].title}
+            images={ProductSliderAssets[0].images}
+          />
+          <ProductSlider
+            title={ProductSliderAssets[1].title}
+            images={ProductSliderAssets[1].images}
+          />
           <RowContainer2 />
+          <ProductSlider
+            title={ProductSliderAssets[2].title}
+            images={ProductSliderAssets[2].images}
+          />
           <RowContainer3 />
           <BottomPageAdd />
+          <ProductSlider
+            title={ProductSliderAssets[3].title}
+            images={ProductSliderAssets[3].images}
+          />
         </div>
         <SignInFooter />
         <BackToTopFooter />
