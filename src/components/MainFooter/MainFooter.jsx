@@ -8,7 +8,7 @@ import {
 export default function () {
   return (
     <>
-      <div className="flex min-w-full justify-center gap-20 bg-SecondaryNavBarBlue py-10 text-neutral-200">
+      <div className="flex min-w-[1000px] justify-center gap-20 bg-SecondaryNavBarBlue py-10 text-neutral-200 px-4">
         <div>
           <h2 className="pb-2 text-xl font-bold text-white">Get to Know Us</h2>
           <ul className="flex flex-col gap-2 text-sm">

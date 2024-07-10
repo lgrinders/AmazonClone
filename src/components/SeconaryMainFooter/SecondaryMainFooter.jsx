@@ -7,7 +7,7 @@ export default function SecondaryMainFooter() {
 
   return (
     <>
-      <div className="flex min-w-full items-center justify-center gap-20 border-t border-neutral-600 bg-SecondaryNavBarBlue py-10">
+      <div className="flex min-w-[1000px] items-center justify-center gap-20 border-t border-neutral-600 bg-SecondaryNavBarBlue py-10">
         <div>
           <a href="#top">
             <img

@@ -7,7 +7,7 @@ import {
 export default function SecondaryFooter() {
   return (
     <>
-      <div className="min-w-screen flex flex-col items-center bg-NavBarBlue pt-6">
+      <div className="min-w-[1000px] w-full flex flex-col items-center bg-NavBarBlue pt-6 px-4">
         <div className="grid-row-4 grid grid-cols-7 gap-x-10 gap-y-2">
           {SecondaryFooterInfo1.map((item, idx) => {
             return (
@@ -37,7 +37,7 @@ export default function SecondaryFooter() {
           })}
         </div>
       </div>
-      <div className="min-w-screen flex flex-col items-center bg-NavBarBlue p-10 text-xs text-white">
+      <div className="min-w-[1000px] flex flex-col items-center bg-NavBarBlue p-10 text-xs text-white">
         <div className="flex gap-3 pb-1">
           {Conditions.map((item, idx) => {
             return (
