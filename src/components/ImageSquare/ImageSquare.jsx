@@ -1,7 +1,7 @@
-export default function ImageSquare({ title, img1, shop }) {
+export default function ImageSquare({ title, img1, shop, hidden }) {
   return (
     <>
-      <div className="flex flex-col justify-between gap-3 p-5 bg-white min-w-[345px] w-[345px]">
+      <div className={`flex flex-col justify-between gap-3 p-5 bg-white min-w-[345px] w-full ${hidden}`}>
         <div className="text-2xl font-bold">{title}</div>
         <div>
           <div>

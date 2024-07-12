@@ -14,26 +14,26 @@ export const ItemSquare = ({
 }) => {
   return (
     <>
-      <div className="flex flex-col justify-between bg-white p-5 min-w-[345px] w-[345px]">
+      <div className="flex w-full flex-col justify-between bg-white p-5 min-w-[345px]">
         <div className="flex flex-col gap-3">
           <div className="text-2xl font-bold">{title}</div>
           <div className="flex gap-5">
             <div>
-              <img src={img1} alt="" className="h-28 w-36 object-cover" />
+              <img src={img1} alt="" className="h-24 w-full object-cover" />
               <p className="text-sm">{name1}</p>
             </div>
             <div>
-              <img src={img2} alt="" className="h-28 w-36 object-cover" />
+              <img src={img2} alt="" className="h-24 w-full object-cover" />
               <p className="text-sm">{name2}</p>
             </div>
           </div>
           <div className="flex gap-5">
             <div>
-              <img src={img3} alt="" className="h-28 w-36 object-cover" />
+              <img src={img3} alt="" className="h-24 w-full object-cover" />
               <p className="text-sm">{name3}</p>
             </div>
             <div>
-              <img src={img4} alt="" className="h-28 w-36 object-cover" />
+              <img src={img4} alt="" className="h-24 w-full object-cover" />
               <p className="text-sm">{name4}</p>
             </div>
           </div>
@@ -52,7 +52,7 @@ export const ItemSquare = ({
 export default function ProductSquare() {
   return (
     <>
-      <div className="relative flex h-[430px] w-full justify-evenly">
+      <div className="relative flex h-[430px] w-full justify-evenly gap-5">
         <ItemSquare
           title={"Summer fashion for all"}
           name1={"All fashion"}
@@ -82,7 +82,9 @@ export default function ProductSquare() {
           img1={"public/productImgs/Dog_mama.jpg"}
           shop={"Shop"}
         />
-        <div className="flex h-full flex-col items-center gap-5">
+        <div
+          className={`h-full w-full min-w-[345px] flex-col items-center gap-5 md:hidden xl:flex`}
+        >
           <div className="flex flex-col gap-3 bg-white p-5 pb-14">
             <h2 className="text-2xl font-bold">
               Sign in for the best experience

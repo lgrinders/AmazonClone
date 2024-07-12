@@ -25,7 +25,8 @@ export default function BackgroundSlider() {
 
   const handlePrevClick = () => {
     clearExistingInterval();
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length,
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length,
     );
   };
 
@@ -69,17 +70,19 @@ export default function BackgroundSlider() {
           tabIndex={0}
           onClick={handlePrevClick}
         >
-          <IoChevronBack size={50} />
+          <IoChevronBack size={50} className="arrow-left" />
         </div>
         <div
           className="flex w-20 items-center justify-center rounded-md border-white focus:border-2"
           tabIndex={1}
           onClick={handleNextClick}
         >
-          <IoChevronForward size={50} />
+          <IoChevronForward size={50} className="arrow-right" />
         </div>
       </div>
-      <ProductSquare />
+      <div className="px-5">
+        <ProductSquare />
+      </div>
     </div>
   );
 }

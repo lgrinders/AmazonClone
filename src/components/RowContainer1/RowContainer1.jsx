@@ -4,7 +4,7 @@ import ImageSquare from "../ImageSquare/ImageSquare";
 export default function RowContainer1() {
   return (
     <>
-      <div className="flex h-[430px] w-full justify-between px-5">
+      <div className="flex h-[430px] w-full px-5 gap-5">
         <ItemSquare
           title={"4th of July Sale"}
           name1={"Fashion"}
@@ -45,6 +45,7 @@ export default function RowContainer1() {
           title={"Discover a new type of soda"}
           img1={"/public/productImgs/soda.jpg"}
           shop={"Start sipping now"}
+          hidden={"md:hidden xl:flex"}
         />
       </div>
     </>

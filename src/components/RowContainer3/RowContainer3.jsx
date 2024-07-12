@@ -4,7 +4,7 @@ import ImageSquare from "../ImageSquare/ImageSquare";
 export default function RowContainer1() {
   return (
     <>
-      <div className="flex h-[430px] w-full justify-between px-5">
+      <div className="flex h-[430px] w-full justify-between px-5 gap-5">
         <ImageSquare
           title={"Cravings by Chrissy Teigen"}
           img1={"/public/productImgs/couple.jpg"}

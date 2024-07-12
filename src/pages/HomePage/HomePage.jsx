@@ -33,7 +33,7 @@ export default function HomePage() {
 
       <SideNav sideNavOpen={sideNavOpen} setSideNavOpen={setSideNavOpen} />
       <div className="bg-neutral-200">
-        <div className="m-auto flex w-[1500px] min-w-[1500px] flex-col gap-5 pb-5">
+        <div className="m-auto flex max-w-[1500px] min-w-[1000px] flex-col gap-5 pb-5">
           <BackgroundSlider />
 
           <RowContainer1 />
@@ -58,6 +58,7 @@ export default function HomePage() {
           />
         </div>
         <SignInFooter />
+        
         <BackToTopFooter />
         <Footer />
         <SecondaryFooter />
