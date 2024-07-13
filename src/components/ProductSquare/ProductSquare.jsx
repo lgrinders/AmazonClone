@@ -1,4 +1,5 @@
 import ImageSquare from "../ImageSquare/ImageSquare";
+import TallAdd from "../TallAdd/TallAdd";
 
 export const ItemSquare = ({
   title,
@@ -11,10 +12,11 @@ export const ItemSquare = ({
   name3,
   name4,
   shop,
+  hidden
 }) => {
   return (
     <>
-      <div className="flex w-full flex-col justify-between bg-white p-5 min-w-[345px]">
+      <div className={`flex w-full min-w-[200px] flex-col justify-between bg-white p-5 h-[430px] ${hidden}`}>
         <div className="flex flex-col gap-3">
           <div className="text-2xl font-bold">{title}</div>
           <div className="flex gap-5">
@@ -52,7 +54,7 @@ export const ItemSquare = ({
 export default function ProductSquare() {
   return (
     <>
-      <div className="relative flex h-[430px] w-full justify-evenly gap-5">
+      <div className="relative flex h-full w-full gap-5 justify-between">
         <ItemSquare
           title={"Summer fashion for all"}
           name1={"All fashion"}
@@ -82,21 +84,7 @@ export default function ProductSquare() {
           img1={"public/productImgs/Dog_mama.jpg"}
           shop={"Shop"}
         />
-        <div
-          className={`h-full w-full min-w-[345px] flex-col items-center gap-5 md:hidden xl:flex`}
-        >
-          <div className="flex flex-col gap-3 bg-white p-5 pb-14">
-            <h2 className="text-2xl font-bold">
-              Sign in for the best experience
-            </h2>
-            <button className="font-sm rounded-lg bg-yellow-300 p-1.5 text-sm duration-100 hover:bg-yellow-500">
-              Sign in seculrely
-            </button>
-          </div>
-          <div>
-            <img src="public/productImgs/21&over.jpg" alt="" />
-          </div>
-        </div>
+        <TallAdd />
       </div>
     </>
   );
