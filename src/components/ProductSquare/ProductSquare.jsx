@@ -20,24 +20,24 @@ export const ItemSquare = ({
         <div className="flex flex-col gap-3">
           <div className="text-2xl font-bold">{title}</div>
           <div className="flex gap-5">
-            <div>
+            <a href="#">
               <img src={img1} alt="" className="h-24 w-full object-cover" />
               <p className="text-sm">{name1}</p>
-            </div>
-            <div>
+            </a>
+            <a href="#">
               <img src={img2} alt="" className="h-24 w-full object-cover" />
               <p className="text-sm">{name2}</p>
-            </div>
+            </a>
           </div>
           <div className="flex gap-5">
-            <div>
+            <a href="#">
               <img src={img3} alt="" className="h-24 w-full object-cover" />
               <p className="text-sm">{name3}</p>
-            </div>
-            <div>
+            </a>
+            <a href="#">
               <img src={img4} alt="" className="h-24 w-full object-cover" />
               <p className="text-sm">{name4}</p>
-            </div>
+            </a>
           </div>
         </div>
 

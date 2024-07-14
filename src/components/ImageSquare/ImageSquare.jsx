@@ -6,8 +6,9 @@ export default function ImageSquare({ title, img1, shop, hidden }) {
       >
         <div className="flex flex-col gap-3">
           <div className="text-2xl font-bold">{title}</div>
-
-          <img src={img1} alt="" className="object-cover h-72" />
+          <a href="#">
+            <img src={img1} alt="" className="h-72 object-cover" />
+          </a>
         </div>
 
         <a href="#" className="text-sm text-blue-700 hover:text-orange-500">

@@ -46,7 +46,7 @@ export default function BackgroundSlider() {
   }, [currentIndex]);
 
   return (
-    <div className="relative z-10 m-auto w-full overflow-hidden overflow-x-hidden">
+    <div className="relative z-10 m-auto w-full overflow-x-hidden">
       <div
         className="absolute inset-0 flex transition-transform duration-500"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -54,13 +54,15 @@ export default function BackgroundSlider() {
         {images.map((image, index) => (
           <div key={index} className="relative h-full w-full flex-shrink-0">
             <div
-              className="fade-bottom h-[600px] w-full flex-shrink-0"
+              className="relative h-[600px] w-full flex-shrink-0"
               style={{
                 backgroundImage: `url(${image})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
-            ></div>
+            >
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-neutral-200"></div>
+            </div>
           </div>
         ))}
       </div>
