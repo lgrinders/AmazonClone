@@ -1,15 +1,19 @@
 import { useState } from "react";
 import { IoCaretDownSharp, IoChevronForward } from "react-icons/io5";
 
-export default function MedicalCare() {
+export default function MedicalCare({ setMedicalOpen }) {
   const [beingHovered, setBeingHovered] = useState(false);
 
   return (
     <>
       <div
         className="relative flex h-full w-[110px] min-w-[110px] items-center gap-1 rounded-sm border border-transparent p-2 hover:border-white"
-        onMouseEnter={(e) => setBeingHovered(true)}
-        onMouseLeave={(e) => setBeingHovered(false)}
+        onMouseEnter={(e) => {
+          setBeingHovered(true), setMedicalOpen(true);
+        }}
+        onMouseLeave={(e) => {
+          setBeingHovered(false), setMedicalOpen(false);
+        }}
       >
         <p className="">Medical Care</p>
         <IoCaretDownSharp size={10} className="text-neutral-400" />
@@ -52,7 +56,9 @@ export default function MedicalCare() {
                 </div>
               </div>
               <div>
-                <p className="text-blue-500 hover:text-red-700 hover:underline">See all health services</p>
+                <p className="text-blue-500 hover:text-red-700 hover:underline">
+                  See all health services
+                </p>
               </div>
             </div>
           </div>

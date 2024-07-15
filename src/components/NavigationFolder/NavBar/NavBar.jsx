@@ -4,12 +4,23 @@ import SearchBar from "../../NavigationFolder/SearchBar/SearchBar";
 import AccountsLists from "../AccountsLists/AccountsList";
 import Languag from "../Languag/Languag";
 
-export default function NavBar() {
+export default function NavBar({
+  langOpen,
+  setLangOpen,
+  accountsOpen,
+  setAccountsOpen,
+}) {
   return (
     <>
-      <div className="flex h-16 items-center gap-1 bg-NavBarBlue p-1 px-3 relative z-50" id="top">
+      <div
+        className="relative z-40 flex h-16 items-center gap-1 bg-NavBarBlue p-1 px-3"
+        id="top"
+      >
         <div className="h-full w-[160px] min-w-[130px] rounded-sm border-2 border-transparent p-1 duration-200 hover:border-white">
-          <img src="/public/navigationImgs/Amazon-logo-white.png" className="p-2" />
+          <img
+            src="/public/navigationImgs/Amazon-logo-white.png"
+            className="p-2"
+          />
         </div>
 
         <div className="flex h-full min-w-[185px] flex-row-reverse items-center justify-center gap-1 rounded-sm border-2 border-transparent p-2 duration-200 hover:border-white">
@@ -26,9 +37,9 @@ export default function NavBar() {
 
         <SearchBar />
 
-        <Languag />
+        <Languag setLangOpen={setLangOpen} />
 
-        <AccountsLists />
+        <AccountsLists setAccountsOpen={setAccountsOpen} />
 
         <div className="flex h-full min-w-[83px] items-center justify-center gap-1 rounded-sm border-2 border-transparent p-2 duration-200 hover:border-white">
           <div>

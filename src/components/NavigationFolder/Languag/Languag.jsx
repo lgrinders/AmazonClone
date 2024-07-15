@@ -1,15 +1,19 @@
 import { useState } from "react";
 import { IoCaretDownSharp } from "react-icons/io5";
 
-export default function Language() {
+export default function Language({ setLangOpen }) {
   const [beingHovered, setBeingHovered] = useState(false);
 
   return (
     <>
       <div
         className="relative flex h-full min-w-[69px] items-center justify-center gap-0.5 rounded-sm border-2 border-transparent p-2 duration-200 hover:border-white"
-        onMouseEnter={(e) => setBeingHovered(true)}
-        onMouseLeave={(e) => setBeingHovered(false)}
+        onMouseEnter={(e) => {
+          setBeingHovered(true), setLangOpen(true);
+        }}
+        onMouseLeave={(e) => {
+          setBeingHovered(false), setLangOpen(false);
+        }}
       >
         <img
           src="/public/navigationImgs/AmericanFlag.png"
@@ -19,7 +23,7 @@ export default function Language() {
         <p className="text- p-0 font-black leading-3 text-white">EN</p>
         <IoCaretDownSharp size={10} className="text-neutral-400" />
         {beingHovered && (
-          <form className="absolute left-0 top-12 flex w-52 flex-col rounded-sm bg-white p-4 shadow-lg">
+          <form className="absolute left-0 top-12 flex w-52 flex-col rounded-sm bg-white p-4 shadow-lg z-50">
             <div className="flex w-full items-center gap-5">
               <div>
                 <input
@@ -66,8 +70,8 @@ export default function Language() {
               />
               <h2 className="text-xs">You are shopping on Amazon.com</h2>
             </div>
-            <div className="w-full flex justify-center mt-4">
-              <a href="#" className="text-blue-500 hover:underline text-sm">
+            <div className="mt-4 flex w-full justify-center">
+              <a href="#" className="text-sm text-blue-500 hover:underline">
                 Change country/region.
               </a>
             </div>

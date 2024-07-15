@@ -61,8 +61,8 @@ export default function ProductSlider({ title, images }) {
         >
           {images.map((item, idx) => {
             return (
-              <a className="flex-none" href="#">
-                <img src={item} className="pb-2.5" key={idx} />
+              <a className="flex-none" href="#" key={idx}>
+                <img src={item} className="pb-2.5" />
               </a>
             );
           })}

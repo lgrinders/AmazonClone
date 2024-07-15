@@ -2,10 +2,10 @@ import { RiMenuLine } from "react-icons/ri";
 import MedicalCare from "../MedicalCare/MedicalCare";
 import Groceries from "../Groceries/Groceries";
 
-export default function SecondaryNavBar({ sideNavOpen, setSideNavOpen }) {
+export default function SecondaryNavBar({ sideNavOpen, setSideNavOpen, setMedicalOpen, setGroceriesOpen }) {
   return (
     <>
-      <div className="flex h-10 items-center bg-SecondaryNavBarBlue px-5 text-sm text-white relative z-40">
+      <div className="flex h-10 items-center bg-SecondaryNavBarBlue px-5 text-sm text-white relative z-30">
         <div
           className="flex h-full w-[70px] min-w-[70px] items-center gap-1 rounded-sm border border-transparent p-2 hover:border-white"
           onClick={(e) => setSideNavOpen(!sideNavOpen)}
@@ -16,7 +16,7 @@ export default function SecondaryNavBar({ sideNavOpen, setSideNavOpen }) {
         <div className="flex h-full w-[140px] min-w-[140px] items-center gap-1 rounded-sm border border-transparent p-2 hover:border-white">
           <p className="">Same-Day Delivery</p>
         </div>
-        <MedicalCare />
+        <MedicalCare setMedicalOpen={setMedicalOpen}/>
         <div className="flex h-full w-[110px] min-w-[110px] items-center gap-1 rounded-sm border border-transparent p-2 hover:border-white">
           <p className="">Amazon Basics</p>
         </div>
@@ -26,7 +26,7 @@ export default function SecondaryNavBar({ sideNavOpen, setSideNavOpen }) {
         <div className="flex h-full w-[140px] min-w-[140px] items-center gap-1 rounded-sm border border-transparent p-2 hover:border-white">
           <p className="">Keep Shopping For</p>
         </div>
-        <Groceries />
+        <Groceries setGroceriesOpen={setGroceriesOpen}/>
         <div className="flex h-full w-[75px] min-w-[75px] items-center gap-1 rounded-sm border border-transparent p-2 hover:border-white">
           <p className="">Pharmacy</p>
         </div>

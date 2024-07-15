@@ -16,24 +16,45 @@ import SecondaryFooter from "../../components/SecondaryFooter/SecondaryFooter";
 
 export default function HomePage() {
   const [sideNavOpen, setSideNavOpen] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
+  const [accountsOpen, setAccountsOpen] = useState(false);
+  const [medicalOpen, setMedicalOpen] = useState(false);
+  const [groceriesOpen, setGroceriesOpen] = useState(false);
 
   return (
     <>
       <div
         className={
-          sideNavOpen ? "absolute z-40 h-screen w-screen bg-black/70" : null
+          sideNavOpen
+            ? "pointer-events-none fixed z-50 h-screen w-full bg-black/70"
+            : null
         }
-      ></div>
+      />
+      <div
+        className={
+          langOpen || accountsOpen
+            ? "pointer-events-none fixed z-40 h-screen w-full bg-black/70"
+            : null
+        }
+      />
+      <div
+        className={
+          medicalOpen || groceriesOpen
+            ? "pointer-events-none fixed z-30 h-screen w-full bg-black/70"
+            : null
+        }
+      />
 
-      <NavBar />
+      <NavBar setLangOpen={setLangOpen} setAccountsOpen={setAccountsOpen} />
       <SecondaryNavBar
         sideNavOpen={sideNavOpen}
         setSideNavOpen={setSideNavOpen}
+        setGroceriesOpen={setGroceriesOpen}
+        setMedicalOpen={setMedicalOpen}
       />
-
       <SideNav sideNavOpen={sideNavOpen} setSideNavOpen={setSideNavOpen} />
       <div className="bg-neutral-200">
-        <div className="m-auto flex max-w-[1500px] min-w-[1000px] flex-col gap-5 pb-5">
+        <div className="m-auto flex min-w-[1000px] max-w-[1500px] flex-col gap-5 pb-5">
           <BackgroundSlider />
 
           <RowContainer1 />
@@ -58,7 +79,7 @@ export default function HomePage() {
           />
         </div>
         <SignInFooter />
-        
+
         <BackToTopFooter />
         <Footer />
         <SecondaryFooter />

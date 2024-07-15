@@ -1,14 +1,18 @@
 import { useState } from "react";
 import { IoCaretDownSharp, IoChevronForward } from "react-icons/io5";
 
-export default function Groceries() {
+export default function Groceries({ setGroceriesOpen }) {
   const [beingHovered, setBeingHovered] = useState(false);
   return (
     <>
       <div
         className="relative flex h-full w-[90px] min-w-[90px] items-center gap-1 rounded-sm border border-transparent p-2 hover:border-white"
-        onMouseEnter={(e) => setBeingHovered(true)}
-        onMouseLeave={(e) => setBeingHovered(false)}
+        onMouseEnter={(e) => {
+          setBeingHovered(true), setGroceriesOpen(true);
+        }}
+        onMouseLeave={(e) => {
+          setBeingHovered(false), setGroceriesOpen(false);
+        }}
       >
         <p className="">Groceries</p>
         <IoCaretDownSharp size={10} className="text-neutral-400" />
@@ -33,7 +37,11 @@ export default function Groceries() {
             </div>
             <div className="flex flex-wrap items-center justify-between gap-3">
               <div className="flex h-40 w-40 flex-col items-center justify-center gap-2 rounded-md bg-neutral-100 duration-200 hover:bg-neutral-200">
-                <img src="public/navigationImgs/fresh.png" alt="fresh" className="w-32" />
+                <img
+                  src="public/navigationImgs/fresh.png"
+                  alt="fresh"
+                  className="w-32"
+                />
               </div>
               <div className="flex h-40 w-40 flex-col items-center justify-center gap-2 rounded-md bg-neutral-100 text-center duration-200 hover:bg-neutral-200">
                 <img

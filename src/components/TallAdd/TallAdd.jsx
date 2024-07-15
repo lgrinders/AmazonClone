@@ -1,8 +1,8 @@
 export default function TallAdd() {
   return (
     <>
-      <div className="w-full flex-col items-center justify-between gap-5 hidden xl:flex">
-        <div className="flex flex-col gap-3 bg-white p-5 w-[350px]">
+      <div className="w-full flex-col items-center justify-between px-5 hidden xl:flex">
+        <div className="flex flex-col gap-3 bg-white p-5 ">
           <h2 className="w-full text-2xl font-bold">
             Sign in for the best experience
           </h2>

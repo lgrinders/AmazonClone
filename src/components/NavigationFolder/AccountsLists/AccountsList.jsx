@@ -2,15 +2,19 @@ import { useState } from "react";
 import { IoCaretDownSharp, IoChevronForward } from "react-icons/io5";
 import { account, lists } from "../../../assets/category";
 
-export default function AccountsLists() {
+export default function AccountsLists({ setAccountsOpen }) {
   const [beingHovered, setBeingHovered] = useState(false);
 
   return (
     <>
       <div
         className="relative flex h-full min-w-[135px] items-center justify-center gap-1 rounded-sm border-2 border-transparent duration-200 hover:border-white"
-        onMouseEnter={(e) => setBeingHovered(true)}
-        onMouseLeave={(e) => setBeingHovered(false)}
+        onMouseEnter={(e) => {
+          setBeingHovered(true), setAccountsOpen(true);
+        }}
+        onMouseLeave={(e) => {
+          setBeingHovered(false), setAccountsOpen(false);
+        }}
       >
         <div>
           <p className="text-xs leading-4 text-white">Hello, sign in</p>
@@ -23,7 +27,7 @@ export default function AccountsLists() {
         </div>
         {beingHovered && (
           <div className="absolute right-1 top-12 rounded-sm bg-white p-3 shadow-lg">
-            <div className="mb-3 flex w-full items-center justify-between rounded-xl bg-lightCyan p-3 text-sm">
+            <div className="bg-lightCyan mb-3 flex w-full items-center justify-between rounded-xl p-3 text-sm">
               <div>Who's shopping? Select a profile.</div>
               <a
                 href=""

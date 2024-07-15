@@ -5,8 +5,6 @@ import { categories } from "../../../assets/category";
 export default function SearchBar() {
   const [showingDropDown, setShowingDropDown] = useState(false);
 
-  console.log(showingDropDown);
-
   return (
     <div className="w-full min-w-[400px] px-4">
       <div className="rounded-md focus-within:ring-2 focus-within:ring-AmazonOrange">
