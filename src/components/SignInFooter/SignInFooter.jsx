@@ -7,7 +7,7 @@ export default function SignInFooter() {
             <button className="w-64 bg-gradient-to-t from-SearchYellow to-cartYellow border border-SearchYellow font-semibold rounded-md py-1 text-sm">Sign in</button>
             <div className="flex text-xs gap-1">
                 <p className="font-semibold">New customer?</p>
-                <p className="hover:text-blue-500">Start here.</p>
+                <a className="hover:text-blue-500" href="#">Start here.</a>
             </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ export default function Language({ setLangOpen }) {
   return (
     <>
       <div
-        className="relative flex h-full min-w-[69px] items-center justify-center gap-0.5 rounded-sm border-2 border-transparent p-2 duration-200 hover:border-white"
+        className="relative flex h-full min-w-[69px] items-center justify-center gap-0.5 rounded-sm border-2 border-transparent p-2 duration-200 hover:border-white cursor-pointer"
         onMouseEnter={(e) => {
           setBeingHovered(true), setLangOpen(true);
         }}

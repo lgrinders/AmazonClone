@@ -10,7 +10,7 @@ export default function SearchBar() {
       <div className="rounded-md focus-within:ring-2 focus-within:ring-AmazonOrange">
         <div className="flex h-10 items-center rounded-md">
           <div
-            className="group relative flex h-full w-12 items-center justify-center gap-2 rounded-l-md bg-neutral-200 hover:bg-neutral-300"
+            className="group relative flex h-full w-12 items-center justify-center gap-2 rounded-l-md bg-neutral-200 hover:bg-neutral-300 cursor-pointer"
             onClick={(e) => setShowingDropDown(!showingDropDown)}
           >
             <p className="text-xs text-neutral-700 group-hover:text-black">
@@ -48,7 +48,7 @@ export default function SearchBar() {
               placeholder="Search Amazon"
             />
           </div>
-          <div className="flex h-full w-12 items-center justify-center gap-2 rounded-r-md bg-orange-300 hover:bg-SearchYellow">
+          <div className="flex h-full w-12 items-center justify-center gap-2 rounded-r-md bg-orange-300 hover:bg-SearchYellow cursor-pointer">
             <IoSearchSharp size={26} />
           </div>
         </div>

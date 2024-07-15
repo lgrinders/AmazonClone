@@ -8,7 +8,7 @@ export default function AccountsLists({ setAccountsOpen }) {
   return (
     <>
       <div
-        className="relative flex h-full min-w-[135px] items-center justify-center gap-1 rounded-sm border-2 border-transparent duration-200 hover:border-white"
+        className="relative flex h-full min-w-[135px] items-center justify-center gap-1 rounded-sm border-2 border-transparent duration-200 hover:border-white cursor-pointer"
         onMouseEnter={(e) => {
           setBeingHovered(true), setAccountsOpen(true);
         }}
