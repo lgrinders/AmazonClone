@@ -1,14 +1,14 @@
-<h1>Trending</h1> 
-<p>Trending is a sleek and easy-to-use eCommerce store.</p> 
+<h1>Amazon Clone</h1> 
+<p>This is a website I built to closely resemble the Amazon desktop home page.</p> 
 <h2>Features</h2> 
 <ul> 
-  <li>Browse clothing for both men and women.</li> 
-  <li>Sort items by featured products, price, or gender.</li> 
-  <li>Add items to your cart and view your total instantly.</li> 
-  <li>Your cart is persistent, even after a page refresh.</li> <li>Clean, stylish, and user-friendly UI.
-  </li> 
+  <li>Multiple on-hover dropdown menus</li> 
+  <li>Advertisement Carousel.</li> 
+  <li>On-click sidebar with the same links as Amazon.</li> 
+  <li>Product slider similar to Amazon’s.</li> 
 </ul>
 
 
 
-![Overview of Sunday Salad](https://github.com/lgrinders/Ecommerce-Trending/blob/main/Trending%20image.jpg?raw=true))
+![Overview of Amazon Clone](https://github.com/user-attachments/assets/92706195-3043-48e8-93bb-695c719f6ce3)
+
