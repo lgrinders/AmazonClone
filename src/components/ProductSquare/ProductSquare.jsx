@@ -63,10 +63,10 @@ export default function ProductSquare() {
           name2={"Women's"}
           name3={"Men's"}
           name4={"Kid's"}
-          img1={"public/productImgs/All_fashion.jpg"}
-          img2={"public/productImgs/Women's.jpg"}
-          img3={"public/productImgs/Men's.jpg"}
-          img4={"public/productImgs/Kid's.jpg"}
+          img1={"productImgs/All_fashion.jpg"}
+          img2={"productImgs/Women's.jpg"}
+          img3={"productImgs/Men's.jpg"}
+          img4={"productImgs/Kid's.jpg"}
           shop={"Shop"}
         />
         <ItemSquare
@@ -75,15 +75,15 @@ export default function ProductSquare() {
           name2={"Home imporvement"}
           name3={"Decor"}
           name4={"Bedding & bath"}
-          img1={"public/productImgs/Kitchen&dining.jpg"}
-          img2={"public/productImgs/Home_improvement.jpg"}
-          img3={"public/productImgs/Decor.jpg"}
-          img4={"public/productImgs/Bedding&bath.jpg"}
+          img1={"productImgs/Kitchen&dining.jpg"}
+          img2={"productImgs/Home_improvement.jpg"}
+          img3={"productImgs/Decor.jpg"}
+          img4={"productImgs/Bedding&bath.jpg"}
           shop={"Shop the latest from Home"}
         />
         <ImageSquare
           title={"Modify by merch on demand"}
-          img1={"public/productImgs/Dog_mama.jpg"}
+          img1={"productImgs/Dog_mama.jpg"}
           shop={"Shop"}
         />
         <TallAdd />
