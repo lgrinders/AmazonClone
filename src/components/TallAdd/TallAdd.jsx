@@ -15,7 +15,7 @@ export default function TallAdd() {
         </div>
         <div className="flex w-full justify-center">
           <img
-            src="public/productImgs/21&over.jpg"
+            src="productImgs/21&over.jpg"
             alt=""
             className="object-contain"
           />

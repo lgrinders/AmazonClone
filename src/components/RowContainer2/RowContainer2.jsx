@@ -8,12 +8,12 @@ export default function RowContainer1() {
         <div className="flex w-full gap-5">
           <ImageSquare
             title={"Just launched: Olay Melts"}
-            img1={"/public/productImgs/face.jpg"}
+            img1={"productImgs/face.jpg"}
             shop={"Start now"}
           />
           <ImageSquare
             title={"Deals on lunch supplies"}
-            img1={"/public/productImgs/lunchBoxes.jpg"}
+            img1={"productImgs/lunchBoxes.jpg"}
             shop={"Shop all"}
           />
           <ItemSquare
@@ -22,15 +22,15 @@ export default function RowContainer1() {
             name2={"Prime van in tin"}
             name3={"Amazon box"}
             name4={"Amazon smile"}
-            img1={"/public/productImgs/card1.jpg"}
-            img2={"/public/productImgs/card2.jpg"}
-            img3={"/public/productImgs/card3.jpg"}
-            img4={"/public/productImgs/card4.jpg"}
+            img1={"productImgs/card1.jpg"}
+            img2={"productImgs/card2.jpg"}
+            img3={"productImgs/card3.jpg"}
+            img4={"productImgs/card4.jpg"}
             shop={"See more designs"}
           />
           <ImageSquare
             title={"Deals on school backpacks"}
-            img1={"/public/productImgs/backpacks.jpg"}
+            img1={"productImgs/backpacks.jpg"}
             shop={"Start sipping now"}
             hidden={"md:hidden xl:flex"}
           />

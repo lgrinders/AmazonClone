@@ -8,12 +8,12 @@ export default function RowContainer1() {
         <div className="flex w-full gap-5">
           <ImageSquare
             title={"Cravings by Chrissy Teigen"}
-            img1={"/public/productImgs/couple.jpg"}
+            img1={"productImgs/couple.jpg"}
             shop={"Shop baking mixes and more"}
           />
           <ImageSquare
             title={"Introducing: new Beats Pill"}
-            img1={"/public/productImgs/pill.jpg"}
+            img1={"productImgs/pill.jpg"}
             shop={"Shop now"}
           />
           <ItemSquare
@@ -22,10 +22,10 @@ export default function RowContainer1() {
             name2={"Smart collars"}
             name3={"Water fountains"}
             name4={"Treat dispensers"}
-            img1={"/public/productImgs/bowl1.jpg"}
-            img2={"/public/productImgs/collar.jpg"}
-            img3={"/public/productImgs/bowl2.jpg"}
-            img4={"/public/productImgs/bowl3.jpg"}
+            img1={"productImgs/bowl1.jpg"}
+            img2={"productImgs/collar.jpg"}
+            img3={"productImgs/bowl2.jpg"}
+            img4={"productImgs/bowl3.jpg"}
             shop={"Shop more tech picks"}
           />
           <ItemSquare
@@ -34,10 +34,10 @@ export default function RowContainer1() {
             name2={"Most-loved finds"}
             name3={"Amazon Music Unlimited"}
             name4={"Shop early deals"}
-            img1={"/public/productImgs/boys.jpg"}
-            img2={"/public/productImgs/jbl.jpg"}
-            img3={"/public/productImgs/music.jpg"}
-            img4={"/public/productImgs/boxes.jpg"}
+            img1={"productImgs/boys.jpg"}
+            img2={"productImgs/jbl.jpg"}
+            img3={"productImgs/music.jpg"}
+            img4={"productImgs/boxes.jpg"}
             shop={"Shop early deals now"}
             hidden={"hidden xl:flex"}
           />

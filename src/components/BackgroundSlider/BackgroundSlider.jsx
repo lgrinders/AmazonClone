@@ -3,13 +3,13 @@ import { IoChevronBack, IoChevronForward } from "react-icons/io5";
 import ProductSquare from "../ProductSquare/ProductSquare";
 
 const images = [
-  "/public/backgroundSliderImgs/sliderImg1.jpg",
-  "/public/backgroundSliderImgs/sliderImg2.jpg",
-  "/public/backgroundSliderImgs/sliderImg3.jpg",
-  "/public/backgroundSliderImgs/sliderImg4.jpg",
-  "/public/backgroundSliderImgs/sliderImg5.jpg",
-  "/public/backgroundSliderImgs/sliderImg6.jpg",
-  "/public/backgroundSliderImgs/sliderImg7.jpg",
+  "backgroundSliderImgs/sliderImg1.jpg",
+  "backgroundSliderImgs/sliderImg2.jpg",
+  "backgroundSliderImgs/sliderImg3.jpg",
+  "backgroundSliderImgs/sliderImg4.jpg",
+  "backgroundSliderImgs/sliderImg5.jpg",
+  "backgroundSliderImgs/sliderImg6.jpg",
+  "backgroundSliderImgs/sliderImg7.jpg",
 ];
 
 export default function BackgroundSlider() {

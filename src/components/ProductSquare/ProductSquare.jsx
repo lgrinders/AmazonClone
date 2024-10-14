@@ -12,11 +12,13 @@ export const ItemSquare = ({
   name3,
   name4,
   shop,
-  hidden
+  hidden,
 }) => {
   return (
     <>
-      <div className={`flex w-full min-w-[200px] flex-col justify-between bg-white p-5 h-[430px] ${hidden}`}>
+      <div
+        className={`flex h-[430px] w-full min-w-[200px] flex-col justify-between bg-white p-5 ${hidden}`}
+      >
         <div className="flex flex-col gap-3">
           <div className="text-2xl font-bold">{title}</div>
           <div className="flex gap-5">
@@ -54,7 +56,7 @@ export const ItemSquare = ({
 export default function ProductSquare() {
   return (
     <>
-      <div className="relative flex h-full w-full gap-5 justify-between">
+      <div className="relative flex h-full w-full justify-between gap-5">
         <ItemSquare
           title={"Summer fashion for all"}
           name1={"All fashion"}

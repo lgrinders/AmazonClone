@@ -11,7 +11,7 @@ export default function SecondaryMainFooter() {
         <div>
           <a href="#top">
             <img
-              src="/public/navigationImgs/amazon-logo-white.png"
+              src="navigationImgs/amazon-logo-white.png"
               alt="amazon-logo"
               className="w-20"
             />
@@ -66,7 +66,7 @@ export default function SecondaryMainFooter() {
                   </div>
                   <div className="flex items-center gap-3">
                     <img
-                      src="/public/navigationImgs/AmericanFlag.png"
+                      src="navigationImgs/AmericanFlag.png"
                       alt="American Flag"
                       className="h-3 w-4"
                     />
@@ -96,7 +96,7 @@ export default function SecondaryMainFooter() {
           </div>
           <div className="relative flex items-center justify-center gap-2 rounded-sm border border-neutral-400 px-2 py-1.5 text-neutral-200">
             <img
-              src="/public/navigationImgs/americanFlag.png"
+              src="navigationImgs/americanFlag.png"
               alt="American-Flag"
               className="h-3 w-5"
             />
