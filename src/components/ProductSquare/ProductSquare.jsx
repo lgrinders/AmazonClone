@@ -75,7 +75,7 @@ export default function ProductSquare() {
           name2={"Home imporvement"}
           name3={"Decor"}
           name4={"Bedding & bath"}
-          img1={"productImgs/Kitchen&dining.jpg"}
+          img1={"productImgs/Kitchen&Dining.jpg"}
           img2={"productImgs/Home_improvement.jpg"}
           img3={"productImgs/Decor.jpg"}
           img4={"productImgs/Bedding&bath.jpg"}
