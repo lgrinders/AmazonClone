@@ -28,7 +28,7 @@ export default function MedicalCare({ setMedicalOpen }) {
                 className="flex h-36 w-80 flex-col items-center justify-center gap-2 rounded-md bg-neutral-100 duration-200 hover:bg-neutral-200"
               >
                 <img
-                  src="public/navigationImgs/primeOneMedical.png"
+                  src="navigationImgs/PrimeOneMedical.png"
                   alt="prime one medical"
                   className="w-40"
                 />
@@ -42,7 +42,7 @@ export default function MedicalCare({ setMedicalOpen }) {
                   className="flex h-36 w-1/2 flex-col items-center justify-center gap-2 rounded-md bg-neutral-100 duration-200 hover:bg-neutral-200"
                 >
                   <img
-                    src="public/navigationImgs/pharmacy.png"
+                    src="navigationImgs/Pharmacy.png"
                     alt="prime one medical"
                     className="w-32"
                   />
@@ -55,7 +55,7 @@ export default function MedicalCare({ setMedicalOpen }) {
                   className="flex h-36 w-1/2 flex-col items-center justify-center gap-2 rounded-md bg-neutral-100 text-center duration-200 hover:bg-neutral-200"
                 >
                   <img
-                    src="public/navigationImgs/clinic.png"
+                    src="navigationImgs/Clinic.png"
                     alt="prime one medical"
                     className="w-32"
                   />

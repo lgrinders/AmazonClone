@@ -7,7 +7,7 @@ export default function Language({ setLangOpen }) {
   return (
     <>
       <div
-        className="relative flex h-full min-w-[69px] items-center justify-center gap-0.5 rounded-sm border-2 border-transparent p-2 duration-200 hover:border-white cursor-pointer"
+        className="relative flex h-full min-w-[69px] cursor-pointer items-center justify-center gap-0.5 rounded-sm border-2 border-transparent p-2 duration-200 hover:border-white"
         onMouseEnter={(e) => {
           setBeingHovered(true), setLangOpen(true);
         }}
@@ -16,14 +16,14 @@ export default function Language({ setLangOpen }) {
         }}
       >
         <img
-          src="/public/navigationImgs/AmericanFlag.png"
+          src="navigationImgs/americanFlag.png"
           alt="American Flag"
           className="h-3 w-5"
         />
         <p className="text- p-0 font-black leading-3 text-white">EN</p>
         <IoCaretDownSharp size={10} className="text-neutral-400" />
         {beingHovered && (
-          <form className="absolute left-0 top-12 flex w-52 flex-col rounded-sm bg-white p-4 shadow-lg z-50">
+          <form className="absolute left-0 top-12 z-50 flex w-52 flex-col rounded-sm bg-white p-4 shadow-lg">
             <div className="flex w-full items-center gap-5">
               <div>
                 <input
@@ -64,7 +64,7 @@ export default function Language({ setLangOpen }) {
             </div>
             <div className="flex items-center gap-3">
               <img
-                src="/public/navigationImgs/AmericanFlag.png"
+                src="navigationImgs/americanFlag.png"
                 alt="American Flag"
                 className="h-3 w-4"
               />

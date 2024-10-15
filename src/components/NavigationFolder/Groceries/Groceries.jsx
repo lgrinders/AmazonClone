@@ -21,7 +21,7 @@ export default function Groceries({ setGroceriesOpen }) {
             <div className="flex flex-col">
               <div className="flex h-16 w-[335px] items-center justify-start gap-5 overflow-hidden rounded-md bg-neutral-100">
                 <img
-                  src="public/navigationImgs/map.png"
+                  src="navigationImgs/map.png"
                   alt="prime one medical"
                   className="left-0 w-16"
                 />
@@ -44,7 +44,7 @@ export default function Groceries({ setGroceriesOpen }) {
                 className="flex h-40 w-40 flex-col items-center justify-center gap-2 rounded-md bg-neutral-100 duration-200 hover:bg-neutral-200"
               >
                 <img
-                  src="public/navigationImgs/fresh.png"
+                  src="navigationImgs/fresh.png"
                   alt="fresh"
                   className="w-32"
                 />
@@ -54,7 +54,7 @@ export default function Groceries({ setGroceriesOpen }) {
                 className="flex h-40 w-40 flex-col items-center justify-center gap-2 rounded-md bg-neutral-100 text-center duration-200 hover:bg-neutral-200"
               >
                 <img
-                  src="public/navigationImgs/wholeFoods.png"
+                  src="navigationImgs/wholeFoods.png"
                   alt="wholeFoods"
                   className="w-32"
                 />
@@ -64,7 +64,7 @@ export default function Groceries({ setGroceriesOpen }) {
                 className="flex h-40 w-40 flex-col items-center justify-center gap-2 rounded-md bg-neutral-100 text-center duration-200 hover:bg-neutral-200"
               >
                 <img
-                  src="public/navigationImgs/wholeFoods.png"
+                  src="navigationImgs/wholeFoods.png"
                   alt="wholeFoods"
                   className="w-32"
                 />
@@ -74,7 +74,7 @@ export default function Groceries({ setGroceriesOpen }) {
                 className="flex h-40 w-40 flex-col items-center justify-center gap-2 rounded-md bg-neutral-100 text-center duration-200 hover:bg-neutral-200"
               >
                 <img
-                  src="public/navigationImgs/wholeFoods.png"
+                  src="navigationImgs/wholeFoods.png"
                   alt="wholeFoods"
                   className="w-32"
                 />
